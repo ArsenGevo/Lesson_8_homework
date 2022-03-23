@@ -1,0 +1,245 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px; /* по умолчанию */
+}
+body {
+  line-height: 1;
+  /* color: #000; */
+  /* font-family:""; */
+  font-family: "Roboto";
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+/* ------------------------------ */
+.wrapper {
+}
+.header {
+}
+.items {
+  background: #02133c;
+  padding: 50px 0;
+}
+.items__container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.items__list {
+  font-size: 0;
+  margin: 0px -12px;
+}
+.item {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  padding: 0 12px;
+}
+.item__image {
+  display: inline-block;
+  width: 76px;
+  text-align: center;
+  vertical-align: top;
+}
+.item__body {
+  padding: 0 0 0 11px;
+  display: inline-block;
+  vertical-align: top;
+}
+.item__tittle {
+  font-size: 36px;
+  font-weight: 900;
+  color: #c40b0b;
+  line-height: 42px;
+}
+.item__text {
+  font-size: 16px;
+  color: #f5f5f5;
+  line-height: 24px;
+  white-space: normal;
+  max-width: 130px;
+}
+.main {
+  margin: 0 30px;
+}
+.block {
+  display: inline-block;
+  background-color: rgb(36, 89, 90);
+  padding: 30px;
+  margin: 0 0 20px 0;
+}
+.link {
+  color: #fff;
+}
+.link:hover {
+  color: #fff;
+}
+.link:visited {
+  color: black;
+}
+.link:hover {
+  color: #fff;
+}
+.button-box {
+  background-color: aqua;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 0;
+  top: 0;
+  position: relative;
+  margin: 20px;
+}
+.button-box:hover {
+  background-color: rgb(22, 199, 199);
+}
+.button-box:active {
+  top: 9px;
+  box-shadow: 0 1px 0;
+}
+.button-link {
+  font-size: 20px;
+}
+.button-link:focus {
+  outline: 2px dotted red;
+}
+
+.window-mainblock {
+  background-color: rgb(255, 255, 255);
+}
+.window-block {
+  max-width: 50%;
+  background-color: blueviolet;
+  margin: 0 auto 20px;
+  padding: 20px;
+  display: inline-block;
+}
+.windowlink {
+}
+.window-content {
+  padding: 20px;
+  background-color: blueviolet;
+  display: none;
+}
+.window-content:target {
+  display: block;
+  margin: 0px 0px 20px 0px;
+}
+.text {
+  margin: 0px 0px 50px 0px;
+}
+.text span {
+  display: inline-block;
+}
+.text *:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.text p:first-of-type {
+  color: red;
+}
+.text *:first-child {
+  color: blue;
+}
+.title {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0 0 40px 0;
+}
+.title::after {
+  content: "";
+  display: block;
+  background-color: green;
+  height: 2px;
+  width: 56px;
+  margin: 15px 0 0 0;
+}
+.list {
+}
+.list li {
+  margin: 0px 0px 20px 0px;
+}
+.list li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  vertical-align: top;
+  border-radius: 50%;
+  margin: 4px 10px 0 0;
+}
+.list li:hover::before {
+  background-color: green;
+}
+.list *:last-child {
+  margin-bottom: 50px;
+}
+.list li:nth-child(even) {
+  color: red;
+}
+.content::first-line {
+  color: red;
+}
+.content::first-letter {
+  font-size: 20px;
+  font-weight: 800;
+}
+.content {
+  margin-bottom: 50px;
+}
+.num-list {
+  counter-reset: item;
+}
+.num-list li:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.num-list li::before {
+  counter-increment: item;
+  content: counter(item) ")";
+  display: inline-block;
+  vertical-align: top;
+  color: red;
+  margin: 0 10px 0 0;
+}
+.footer {
+}
